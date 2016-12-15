@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "outValue": {
+      "type": "string",
+      "required": true,
+      "title": "Output Value"
+    }
+  }
+}

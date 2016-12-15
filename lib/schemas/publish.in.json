@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "inValue": {
+      "type": "string",
+      "required": true,
+      "title": "Input Value"
+    }
+  }
+}
