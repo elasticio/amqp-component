@@ -1,22 +1,11 @@
 {
   "title": "PubSub",
   "description": "Pub/Sub Component for async communication with queues and topics",
-  "credentials": {
-    "fields": {
-      "name": {
-        "label": "My API Key",
-        "required": true,
-        "viewClass": "TextFieldView"
-      }
-    }
-  },
   "actions": {
     "publish": {
       "title": "Publish",
       "main": "./lib/actions/publish.js",
       "metadata": {
-        "in": "./lib/schemas/publish.in.json",
-        "out": "./lib/schemas/publish.out.json"
       }
     }
   }
