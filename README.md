@@ -1,7 +1,7 @@
-# pubsub-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# amqp-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Pub/Sub Component for async communication with queues and topics
 
-# pubsub-component
+# amqp-component
 PubSub component for the [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;)
 
 If you plan to **deploy it into [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;) you must follow sets of instructions to succseed**. 
@@ -54,9 +54,9 @@ No known issues are there yet.
 Apache-2.0 © [elastic.io GmbH](https://elastic.io)
 
 
-[npm-image]: https://badge.fury.io/js/pubsub-component.svg
-[npm-url]: https://npmjs.org/package/pubsub-component
-[travis-image]: https://travis-ci.org/elasticio/pubsub-component.svg?branch=master
-[travis-url]: https://travis-ci.org/elasticio/pubsub-component
-[daviddm-image]: https://david-dm.org/elasticio/pubsub-component.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/elasticio/pubsub-component
+[npm-image]: https://badge.fury.io/js/amqp-component.svg
+[npm-url]: https://npmjs.org/package/amqp-component
+[travis-image]: https://travis-ci.org/elasticio/amqp-component.svg?branch=master
+[travis-url]: https://travis-ci.org/elasticio/amqp-component
+[daviddm-image]: https://david-dm.org/elasticio/amqp-component.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/elasticio/amqp-component
