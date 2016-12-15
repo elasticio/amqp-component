@@ -10,9 +10,9 @@ If you plan to **deploy it into [elastic.io platform](http://www.elastic.io &#34
 
 Before you can deploy any code into elastic.io **you must be a registered elastic.io platform user**. Please see our home page at [http://www.elastic.io](http://www.elastic.io) to learn how. 
 
-We&#39;ll use git and SSH public key authentication to upload your component code, therefore you must **[upload your SSH Key](http://docs.elastic.io/docs/ssh-key)**. 
+We will use git and SSH public key authentication to upload your component code, therefore you must **[upload your SSH Key](http://docs.elastic.io/docs/ssh-key)**. 
 
-&gt; If you fail to upload you SSH Key you will get **permission denied** error during the deployment.
+If you fail to upload you SSH Key you will get **permission denied** error during the deployment.
 
 ## Getting Started
 
