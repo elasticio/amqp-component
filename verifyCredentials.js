@@ -1,23 +1,20 @@
 'use strict';
 const co = require('co');
-const rp = require('request-promise');
+const amqp = require('amqplib');
 
 // This function will be called by the platform to verify credentials
 module.exports = function verifyCredentials(credentials, cb) {
   console.log('Credentials passed for verification %j', credentials);
-
+  const amqpURI = credentials.amqpURI;
+  const amqpExchange = 'verify_credentials_test';
   co(function*() {
-    console.log('Fetching user information');
-
-    const test = yield rp({
-      uri: 'https://cdn.elastic.io/test.json',
-      json: true
-    });
-
-    console.log('Fetched JSON value=%j', test);
-
-    console.log('Verification completed');
-
+    console.log('Connecting to amqpURI=%s', amqpURI);
+    const conn = yield amqp.connect(amqpURI);
+    console.log('Creating a confirm channel');
+    const channel = yield conn.createConfirmChannel();
+    console.log('Asserting topic exchange exchange=%s', amqpExchange);
+    yield channel.assertExchange(amqpExchange, 'topic', { durable: false });
+    console.log('Verified successfully');
     cb(null, {verified: true});
   }).catch(err => {
     console.log('Error occurred', err.stack || err);

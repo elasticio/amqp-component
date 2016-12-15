@@ -1,6 +1,16 @@
 {
   "title": "PubSub",
   "description": "Pub/Sub Component for async communication with queues and topics",
+  "credentials": {
+    "fields": {
+      "amqpURI": {
+        "label": "AMQP URI",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "placeholder": "amqp://foo:password@server.io"
+      }
+    }
+  },
   "actions": {
     "publish": {
       "title": "Publish",
