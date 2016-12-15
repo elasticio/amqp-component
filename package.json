@@ -22,12 +22,14 @@
     "elasticio-component"
   ],
   "dependencies": {
-    "co": "^4.6.0",
+    "amqplib": "^0.5.1",
     "bluebird": "^3.4.6",
-    "request": "^2.75.0",
-    "request-promise": "^4.1.1",
+    "co": "^4.6.0",
+    "debug": "^2.4.4",
+    "elasticio-node": "0.0.5",
     "elasticio-sailor-nodejs": "1.3.0",
-    "elasticio-node": "0.0.5"
+    "request": "^2.75.0",
+    "request-promise": "^4.1.1"
   },
   "devDependencies": {
     "eslint": "^2.1.0",
