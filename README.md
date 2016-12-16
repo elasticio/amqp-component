@@ -35,17 +35,30 @@ $ git push elasticio master
 
 ## Authentication
 
-This component is using the internal RabbitMQ instance that is available as part of elastic.io
-infrastructure, it expects following environment variables to be present when started:
-* ``ELASTICIO_AMQP_URI`` something like ``amqp://foo:bar@server``
+This component exects user to provide a AMQP URI, username and password should be embedded
+as part of the URI, for example ``amqp://foo:bar@server``. You can also use URI syntax
+to parametrize any other options (e.g. vHost or port)
+
+## Encryption
+
+This component will automatically encrypt data that is sent to the queue when following
+environment variables are set:
+
 * ``ELASTICIO_MESSAGE_CRYPTO_IV`` vector for symmetric encryption
 * ``ELASTICIO_MESSAGE_CRYPTO_PASSWORD`` password for symmetric encryption
-* ``ELASTICIO_USER_ID`` ID of the current user, used to construct name of the exchange
 
- 
+These variables are by default available in elastic.io environment. 
+Data will be encrypted using symetrical AES-256 encryption.
+
+
 ## Known issues
 
-No known issues are there yet.
+Following limitations of the component are known:
+* You can not publish to the default exchange. Not a huge limitation can be easily fixed
+but IMHO makes no sense now.
+* All exchanges you publish to are by default 'topic' exchanges - not a big limitation
+either, but with topic exchanges you can emulate direct and fanout exchanges
+so is't a sensible default so far.
 
 
 ## License
