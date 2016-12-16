@@ -30,6 +30,21 @@
     "consume": {
       "title": "Consume",
       "main": "./lib/actions/consume.js",
+      "fields": {
+        "topic": {
+          "label": "Exchange",
+          "viewClass": "TextFieldView",
+          "required": true,
+          "placeholder": "up_to_200_symbols"
+        },
+        "bindingKey": {
+          "label": "Binding Key",
+          "viewClass": "TextFieldWithNoteView",
+          "required": false,
+          "placeholder": "dot.delimited.words",
+          "note": "Please use <b>bold</b> and <a href=\"\">links</a> here."
+        }
+      },
       "metadata": {
         "in": {},
         "out": "./lib/schemas/consume.out.json"
