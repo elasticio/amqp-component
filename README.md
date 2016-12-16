@@ -40,7 +40,6 @@ infrastructure, it expects following environment variables to be present when st
 * ``ELASTICIO_AMQP_URI`` something like ``amqp://foo:bar@server``
 * ``ELASTICIO_MESSAGE_CRYPTO_IV`` vector for symmetric encryption
 * ``ELASTICIO_MESSAGE_CRYPTO_PASSWORD`` password for symmetric encryption
-* ``ELASTICIO_TASK_ID`` ID of the currently running task, used to construct name for exchange
 * ``ELASTICIO_USER_ID`` ID of the current user, used to construct name of the exchange
 
  

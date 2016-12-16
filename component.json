@@ -15,6 +15,14 @@
     "publish": {
       "title": "Publish",
       "main": "./lib/actions/publish.js",
+      "fields": {
+        "topic": {
+          "label": "Exchange",
+          "viewClass": "TextFieldView",
+          "required": true,
+          "placeholder": "up_to_200_symbols"
+        }
+      },
       "metadata": {
       }
     }
