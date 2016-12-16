@@ -33,6 +33,14 @@ Now we are ready to push it:
 $ git push elasticio master
 ```
 
+## How consumer works
+
+Consumer will register a non-exclusive non-durable queue with autodelete=true without
+  any dead-letter. Name of the queue will be dynamically
+  generated based on the user ID, TASK ID prefixed with ``eio_consumer_``. 
+  This queue will be bound to the exchange with specified bound key or multiple
+   bound keys that are specified in one string separated by commas.
+
 ## Authentication
 
 This component exects user to provide a AMQP URI, username and password should be embedded
