@@ -31,6 +31,7 @@
     "consume": {
       "title": "Consume",
       "main": "./lib/actions/consume.js",
+      "type": "polling",
       "fields": {
         "topic": {
           "label": "Exchange",
