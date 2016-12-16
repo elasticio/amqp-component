@@ -23,7 +23,16 @@
           "placeholder": "up_to_200_symbols"
         }
       },
+      "metadata": {}
+    }
+  },
+  "triggers": {
+    "consume": {
+      "title": "Consume",
+      "main": "./lib/actions/consume.js",
       "metadata": {
+        "in": {},
+        "out": "./lib/schemas/consume.out.json"
       }
     }
   }
