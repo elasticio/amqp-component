@@ -1,5 +1,5 @@
 {
-  "title": "PubSub",
+  "title": "AMQP",
   "description": "Pub/Sub Component for async communication with queues and topics",
   "credentials": {
     "fields": {
@@ -18,9 +18,10 @@
       "fields": {
         "topic": {
           "label": "Exchange",
-          "viewClass": "TextFieldView",
+          "viewClass": "TextFieldWithNoteView",
           "required": true,
-          "placeholder": "up_to_200_symbols"
+          "placeholder": "up_to_200_symbols",
+          "note": "This exchange will be created on start if not exists."
         }
       },
       "metadata": {}
@@ -33,16 +34,17 @@
       "fields": {
         "topic": {
           "label": "Exchange",
-          "viewClass": "TextFieldView",
+          "viewClass": "TextFieldWithNoteView",
           "required": true,
-          "placeholder": "up_to_200_symbols"
+          "placeholder": "up_to_200_symbols",
+          "note": "This exchange will be created on start if not exists."
         },
         "bindingKey": {
           "label": "Binding Key",
           "viewClass": "TextFieldWithNoteView",
           "required": false,
           "placeholder": "dot.delimited.words",
-          "note": "Please use <b>bold</b> and <a href=\"\">links</a> here."
+          "note": "You can use <b>#</b> or <b>*</b> to wildcard, more info <a href=\"http://www.rabbitmq.com/tutorials/tutorial-five-javascript.html\">here</a>"
         }
       },
       "metadata": {
