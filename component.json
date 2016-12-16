@@ -30,7 +30,7 @@
   "triggers": {
     "consume": {
       "title": "Consume",
-      "main": "./lib/actions/consume.js",
+      "main": "./lib/triggers/consume.js",
       "type": "polling",
       "fields": {
         "topic": {
