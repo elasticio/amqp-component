@@ -50,10 +50,7 @@
           "note": "Optional. You can use <b>#</b> or <b>*</b> to wildcard, more info <a href=\"http://www.rabbitmq.com/tutorials/tutorial-five-javascript.html\">here</a>"
         }
       },
-      "metadata": {
-        "in": {},
-        "out": "./lib/schemas/consume.out.json"
-      }
+      "metadata": { }
     }
   }
 }
