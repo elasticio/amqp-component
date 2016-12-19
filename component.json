@@ -24,7 +24,9 @@
           "note": "This exchange will be created on start if not exists."
         }
       },
-      "metadata": {}
+      "metadata": {
+        "in": "./lib/schemas/publish.in.json"
+      }
     }
   },
   "triggers": {

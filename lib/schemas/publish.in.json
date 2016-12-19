@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "routingKey": {
+      "type": "string",
+      "required": true,
+      "title": "Routing Key"
+    },
+    "payload": {
+      "type": "string",
+      "required": "true",
+      "title": "Payload"
+    }
+  }
+}
