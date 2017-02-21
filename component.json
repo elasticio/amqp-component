@@ -47,7 +47,7 @@
           "viewClass": "TextFieldWithNoteView",
           "required": false,
           "placeholder": "this.key,that.key",
-          "note": "Optional. You can use <b>#</b> or <b>*</b> to wildcard, more info <a href=\"http://www.rabbitmq.com/tutorials/tutorial-five-javascript.html\">here</a>"
+          "note": "Optional. You can use <b>#</b> or <b>*</b> to wildcard, more info <a href=\"http://www.rabbitmq.com/tutorials/tutorial-five-javascript.html\" target=\"_top\">here</a>"
         }
       },
       "metadata": { }
