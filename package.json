@@ -1,6 +1,6 @@
 {
   "name": "pub-sub",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Pub/Sub Component for async communication with queues and topics",
   "homepage": "http://www.elastic.io",
   "author": {
