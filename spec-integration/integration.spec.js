@@ -38,7 +38,8 @@ describe('Integration test', () => {
     describe('subscribe then publish', () => {
         const cfg = {
             amqpURI : process.env.AMQP_URL,
-            topic: 'integartion-testing-' + (process.env.TRAVIS_BUILD_ID || 'local'),
+            topic: 'integartion-testing-' + (process.env.TRAVIS_COMMIT || 'local')
+                + '-' + (process.env.TRAVIS_NODE_VERSION || 'local'),
             bindingKeys: 'foo.bar'
         };
 
