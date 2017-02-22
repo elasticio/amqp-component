@@ -11,6 +11,9 @@
   "files": [
     "lib"
   ],
+  "scripts": {
+    "integration-test": "NODE_ENV=test mocha spec-integration/*"
+  },
   "main": "lib/index.js",
   "keywords": [
     "elasticio",
@@ -32,8 +35,10 @@
     "request-promise": "^4.1.1"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^2.1.0",
-    "eslint-config-xo-space": "^0.10.0"
+    "eslint-config-xo-space": "^0.10.0",
+    "mocha": "^3.2.0"
   },
   "eslintConfig": {
     "extends": "xo-space",
