@@ -12,7 +12,7 @@
     "lib"
   ],
   "engines": {
-    "node": ">12"
+    "node": ">=12"
   },
   "scripts": {
     "pretest": "eslint spec-integration lib verifyCredentials.js --fix",
