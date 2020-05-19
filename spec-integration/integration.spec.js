@@ -23,7 +23,7 @@ class TestEmitter extends EventEmitter {
   }
 }
 
-describe('Integration test', () => {
+describe.skip('Integration test', () => {
   if (fs.existsSync('.env')) {
     // eslint-disable-next-line global-require
     require('dotenv').config();
