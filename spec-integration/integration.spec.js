@@ -23,7 +23,7 @@ class TestEmitter extends EventEmitter {
   }
 }
 
-describe.skip('Integration test', () => {
+describe('Integration test', () => {
   if (fs.existsSync('.env')) {
     // eslint-disable-next-line global-require
     require('dotenv').config();
@@ -38,6 +38,10 @@ describe.skip('Integration test', () => {
       throw new Error('Please set '
             + 'ELASTICIO_MESSAGE_CRYPTO_PASSWORD env variable to proceed');
     }
+  });
+
+  after(() => {
+    process.exit();
   });
 
   describe('subscribe then publish', () => {
