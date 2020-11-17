@@ -16,7 +16,7 @@
   },
   "scripts": {
     "pretest": "eslint spec-integration lib verifyCredentials.js --fix",
-    "integration-test": "NODE_ENV=test mocha spec-integration/* --timeout 5000"
+    "integration-test": "NODE_ENV=test mocha spec-integration/* --timeout 10000"
   },
   "main": "lib/index.js",
   "keywords": [
