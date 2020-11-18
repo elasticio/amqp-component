@@ -1,7 +1,7 @@
 const amqp = require('amqplib');
 
 // This function will be called by the platform to verify credentials
-module.exports = async function verifyCredentials(credentials, cb) {
+module.exports = async function verifyCredentials(credentials) {
   const self = this;
   this.logger.info('Verifying Credentials...');
   const { amqpURI } = credentials;
@@ -15,9 +15,9 @@ module.exports = async function verifyCredentials(credentials, cb) {
     self.logger.info('Asserting topic exchange exchange...');
     await channel.assertExchange(amqpExchange, 'topic', { durable: false });
     self.logger.info('Verified successfully');
-    cb(null, { verified: true });
+    return { verified: true };
   } catch (err) {
     this.logger.error('Credentials verification failed!');
-    cb(err, { verified: false });
+    throw err;
   }
 };
