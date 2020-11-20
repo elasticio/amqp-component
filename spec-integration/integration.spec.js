@@ -1,8 +1,8 @@
 const fs = require('fs');
 const { expect } = require('chai');
 const EventEmitter = require('events');
-const co = require('co');
 const logger = require('@elastic.io/component-logger')();
+
 const publish = require('../lib/actions/publish');
 const consume = require('../lib/triggers/consume');
 
@@ -54,7 +54,7 @@ describe('Integration test', () => {
 
     before(() => publish.init(cfg).then(consume.init(cfg)));
 
-    it('send and receive', () => co(function* gen() {
+    it('send and receive', async () => {
       logger.info('Starting test');
       const receiver = new TestEmitter();
       const sender = new TestEmitter();
@@ -83,15 +83,15 @@ describe('Integration test', () => {
         },
       };
       logger.info('Initializing receiver');
-      yield consume.process.call(receiver, {}, cfg);
-      yield new Promise((ok) => setTimeout(ok, 1000));
+      await consume.process.call(receiver, {}, cfg);
+      await new Promise((ok) => setTimeout(ok, 1000));
       logger.info('Sending messages');
-      const out1 = yield publish.process.call(sender, msg1, cfg);
-      const out2 = yield publish.process.call(sender, msg2, cfg);
+      const out1 = await publish.process.call(sender, msg1, cfg);
+      const out2 = await publish.process.call(sender, msg2, cfg);
       expect(out1).deep.equal(msg1);
       expect(out2).deep.equal(msg2);
       logger.info('Sending completed, now wait');
-      yield new Promise((ok) => setTimeout(ok, 1000));
+      await new Promise((ok) => setTimeout(ok, 1000));
       logger.info('Lets check');
       expect(receiver.data.length).equal(1);
       expect(receiver.data[0]).deep.equal({
@@ -105,6 +105,6 @@ describe('Integration test', () => {
         headers: {},
         metadata: {},
       });
-    })).timeout(5000);
+    });
   });
 });
