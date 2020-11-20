@@ -1,4 +1,6 @@
-# amqp-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+[![CircleCI](https://circleci.com/gh/elasticio/amqp-component.svg?style=svg)](https://circleci.com/gh/elasticio/amqp-component)
+
+# amqp-component
 
 ## Description
 
