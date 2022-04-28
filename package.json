@@ -33,7 +33,7 @@
     "bluebird": "3.7.2",
     "co": "4.6.0",
     "elasticio-node": "0.0.9",
-    "elasticio-sailor-nodejs": "2.6.7",
+    "elasticio-sailor-nodejs": "2.6.14",
     "request": "2.88.2",
     "request-promise": "4.2.5",
     "@elastic.io/component-logger": "0.0.1"

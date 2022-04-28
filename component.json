@@ -23,6 +23,16 @@
           "required": true,
           "placeholder": "up_to_200_symbols",
           "note": "This exchange will be created on start if not exists."
+        },
+        "encrypt": {
+          "label": "Encrypt payload",
+          "viewClass": "CheckBoxView",
+          "note": "If checked payload will be encrypted"
+        },
+        "contentType": {
+          "label": "Content-Type (default is 'application/octet-stream')",
+          "viewClass": "TextFieldWithNoteView",
+          "note": "Content-Type of pushed payload"
         }
       },
       "metadata": {
@@ -49,9 +59,24 @@
           "required": false,
           "placeholder": "this.key,that.key",
           "note": "Optional. You can use <b>#</b> or <b>*</b> to wildcard, more info <a href=\"http://www.rabbitmq.com/tutorials/tutorial-five-javascript.html\" target=\"_top\">here</a>"
+        },
+        "queueName": {
+          "label": "Custom queue name",
+          "viewClass": "TextFieldWithNoteView",
+          "required": false,
+          "placeholder": "QueueName",
+          "note": "Optional. If empty component will create queue with autoDelete = true."
+        },
+        "decrypt": {
+          "label": "Decrypt payload",
+          "viewClass": "CheckBoxView",
+          "note": "If checked payload will be decrypted"
         }
       },
-      "metadata": { }
+      "metadata": {
+      }
     }
-  }
+  },
+  "language": "nodejs",
+  "sailor_version": "2.6.14"
 }
