@@ -1,3 +1,8 @@
+## 1.3.4 (March 25, 2023)
+* Implemented retry mechanism on connection errors
+* Upgrade to sailor 2.7.1
+* Upgrade amqplib to 0.10.3
+
 ## 1.3.3 (March 25, 2021)
 
 * Upgrade to sailor 2.6.24
