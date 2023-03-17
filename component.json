@@ -29,7 +29,7 @@
           "label": "Don't encrypt payload",
           "viewClass": "CheckBoxView",
           "help": {
-            "description": "If checked payload will be not encrypted"
+            "description": "If checked, payload will be not encrypted"
           }
         },
         "contentType": {
