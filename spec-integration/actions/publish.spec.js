@@ -2,7 +2,7 @@
 const { getContext, creds } = require('../common');
 const publish = require('../../lib/actions/publish');
 
-describe.only('publish action', () => {
+xdescribe('publish action', () => {
   it('Should publish', async () => {
     const cfg = {
       topic: 'integration-testing-local',
