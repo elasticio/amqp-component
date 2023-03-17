@@ -15,7 +15,7 @@ if (existsSync('.env')) {
     throw new Error('Please, provide all environment variables');
   }
 } else {
-  throw new Error('Please, provide environment variables to .env');
+  // throw new Error('Please, provide environment variables to .env');
 }
 const { AMQP_URL } = process.env;
 
