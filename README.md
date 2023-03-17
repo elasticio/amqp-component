@@ -73,7 +73,7 @@ start if it doesn't exists.
 Following limitations of the component are known:
 *   You can not publish to the default exchange.
 *   All published exchanges are `topic` exchanges by default. However, with the `topic` exchanges one can emulate `direct` and `fanout` exchanges.
-*   Real-time flow is preferred for trigger to avoid data loss
+*   Real-time flow is recommended for trigger to avoid data loss
 
 ## License
 
