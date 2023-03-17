@@ -42,7 +42,7 @@
           "required": false,
           "viewClass": "TextFieldView",
           "help": {
-            "description": "In case of errors how long to wait until retry is seconds. 5 by default"
+            "description": "In case of errors how long to wait until retry in seconds. 5 by default"
           }
         },
         "reconnectAttempts": {
