@@ -25,7 +25,7 @@
           "placeholder": "up_to_200_symbols",
           "note": "This exchange will be created on start if not exists."
         },
-        "DoNotEncrypt": {
+        "doNotEncrypt": {
           "label": "Don't encrypt payload",
           "viewClass": "CheckBoxView",
           "help": {
@@ -79,7 +79,7 @@
           "placeholder": "this.key,that.key",
           "note": "Optional. You can use <b>#</b> or <b>*</b> to wildcard, more info <a href=\"http://www.rabbitmq.com/tutorials/tutorial-five-javascript.html\" target=\"_top\">here</a>"
         },
-        "DoNotDecrypt": {
+        "doNotDecrypt": {
           "label": "Don't decrypt payload",
           "viewClass": "CheckBoxView",
           "help": {

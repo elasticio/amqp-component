@@ -7,7 +7,6 @@ module.exports = async function verifyCredentials(cfg) {
   try {
     const amqpClient = new AMQPClient(cfg, this);
     await amqpClient.init(true, { durable: false });
-    // await amqpClient.waitForConnect();
     this.logger.info('Verified successfully');
     return { verified: true };
   } catch (err) {
