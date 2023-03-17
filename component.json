@@ -83,7 +83,7 @@
           "label": "Don't decrypt payload",
           "viewClass": "CheckBoxView",
           "help": {
-            "description": "If checked payload will be not decrypted"
+            "description": "If checked, payload will be not decrypted"
           }
         },
         "reconnectTimeOut": {
