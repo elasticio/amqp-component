@@ -1,5 +1,8 @@
-## 1.3.4 (March 25, 2023)
+## 1.4.0 (March 25, 2023)
 * Implemented retry mechanism on connection errors
+* Added configuration fields to set retry options
+* Added `Don't encrypt payload` and `Content-Type` configuration fields to `Publish` action
+* Added `Don't decrypt payload` configuration field to `Consume` trigger
 * Upgrade to sailor 2.7.1
 * Upgrade amqplib to 0.10.3
 

@@ -30,6 +30,7 @@
   ],
   "dependencies": {
     "@elastic.io/component-logger": "0.0.1",
+    "amqp-connection-manager": "4.1.11",
     "amqplib": "0.10.3",
     "elasticio-node": "0.0.9",
     "elasticio-sailor-nodejs": "2.7.1",
@@ -38,12 +39,13 @@
   "devDependencies": {
     "better-npm-audit": "3.7.3",
     "chai": "4.2.0",
-    "dotenv": "8.2.0",
+    "dotenv": "16.0.3",
     "eslint": "7.0.0",
     "eslint-config-airbnb-base": "14.1.0",
     "eslint-config-xo-space": "0.24.0",
     "eslint-plugin-import": "2.20.2",
-    "mocha": "10.2.0"
+    "mocha": "10.2.0",
+    "sinon": "15.0.2"
   },
   "repository": "elasticio/pub-sub",
   "license": "Apache-2.0"
