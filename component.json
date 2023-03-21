@@ -2,6 +2,7 @@
   "title": "AMQP",
   "buildType": "docker",
   "description": "Pub/Sub Component for async communication with queues and topics",
+  "version": "1.4.0",
   "credentials": {
     "fields": {
       "amqpURI": {
@@ -23,6 +24,34 @@
           "required": true,
           "placeholder": "up_to_200_symbols",
           "note": "This exchange will be created on start if not exists."
+        },
+        "doNotEncrypt": {
+          "label": "Don't encrypt payload",
+          "viewClass": "CheckBoxView",
+          "help": {
+            "description": "If checked, payload will be not encrypted"
+          }
+        },
+        "contentType": {
+          "label": "Content-Type",
+          "viewClass": "TextFieldWithNoteView",
+          "note": "Content-Type of pushed payload, default is 'application/octet-stream'"
+        },
+        "reconnectTimeOut": {
+          "label": "Reconnect Time Out",
+          "required": false,
+          "viewClass": "TextFieldView",
+          "help": {
+            "description": "In case of errors how long to wait until retry in seconds. 5 by default"
+          }
+        },
+        "reconnectAttempts": {
+          "label": "Reconnect Attempts",
+          "required": false,
+          "viewClass": "TextFieldView",
+          "help": {
+            "description": "How many times try to reconnect before throw error. 12 by default"
+          }
         }
       },
       "metadata": {
@@ -49,6 +78,29 @@
           "required": false,
           "placeholder": "this.key,that.key",
           "note": "Optional. You can use <b>#</b> or <b>*</b> to wildcard, more info <a href=\"http://www.rabbitmq.com/tutorials/tutorial-five-javascript.html\" target=\"_top\">here</a>"
+        },
+        "doNotDecrypt": {
+          "label": "Don't decrypt payload",
+          "viewClass": "CheckBoxView",
+          "help": {
+            "description": "If checked, payload will be not decrypted"
+          }
+        },
+        "reconnectTimeOut": {
+          "label": "Reconnect Timeout",
+          "required": false,
+          "viewClass": "TextFieldView",
+          "help": {
+            "description": "In case of errors how long to wait until retry is seconds. 5 by default"
+          }
+        },
+        "reconnectAttempts": {
+          "label": "Reconnect Attempts",
+          "required": false,
+          "viewClass": "TextFieldView",
+          "help": {
+            "description": "How many times try to reconnect before throw error. 12 by default"
+          }
         }
       },
       "metadata": { }
