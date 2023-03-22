@@ -1,25 +1,20 @@
 {
-  "name": "pub-sub",
-  "description": "Pub/Sub Component for async communication with queues and topics",
+  "name": "amqp-component",
   "homepage": "http://www.elastic.io",
   "author": {
     "name": "elastic.io GmbH",
     "email": "info@elastic.io",
     "url": "https://elastic.io"
   },
-  "files": [
-    "lib"
-  ],
   "engines": {
-    "node": "14"
+    "node": "18.x"
   },
   "scripts": {
     "audit": "better-npm-audit audit --level high --production",
     "pretest": "eslint spec-integration lib verifyCredentials.js --fix",
-    "test": "exit",
+    "test": "mocha \"spec/**/*spec.js\"",
     "integration-test": "NODE_ENV=test mocha spec-integration/* --timeout 10000"
   },
-  "main": "lib/index.js",
   "keywords": [
     "elasticio",
     "component",
@@ -48,6 +43,6 @@
     "mocha": "10.2.0",
     "sinon": "15.0.2"
   },
-  "repository": "elasticio/pub-sub",
+  "repository": "elasticio/amqp-component",
   "license": "Apache-2.0"
 }
