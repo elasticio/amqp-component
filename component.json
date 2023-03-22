@@ -1,8 +1,7 @@
 {
-  "title": "AMQP",
-  "buildType": "docker",
-  "description": "Pub/Sub Component for async communication with queues and topics",
-  "version": "1.4.0",
+  "title": "AMQP component",
+  "description": "AMQP Component for async communication with queues and topics",
+  "version": "1.4.0-dev.50",
   "credentials": {
     "fields": {
       "amqpURI": {
