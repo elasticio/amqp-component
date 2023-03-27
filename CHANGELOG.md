@@ -1,3 +1,6 @@
+## 1.4.2 (March 27, 2023)
+Fixed issue with shutdown hook in `Consume` trigger
+
 ## 1.4.1 (March 27, 2023)
 Fixed connection cloning in `Publish` action
 
