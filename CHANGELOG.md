@@ -1,3 +1,6 @@
+## 1.4.1 (March 27, 2023)
+Fixed connection cloning in `Publish` action
+
 ## 1.4.0 (March 25, 2023)
 * Implemented retry mechanism on connection errors
 * Added configuration fields to set retry options

@@ -1,7 +1,7 @@
 {
   "title": "AMQP component",
   "description": "AMQP Component for async communication with queues and topics",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "credentials": {
     "fields": {
       "amqpURI": {

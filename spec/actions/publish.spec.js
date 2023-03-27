@@ -26,6 +26,7 @@ describe('processAction', () => {
     const configuration = {
       doNotEncrypt: true,
     };
+    sinon.stub(AMQPClient.prototype, 'init').callsFake(async () => { });
     const publishStub = sinon.stub(AMQPClient.prototype, 'publish').callsFake(async () => { });
     const result = await process.call(getContext(), message, configuration);
 
@@ -49,6 +50,7 @@ describe('processAction', () => {
         routingKey: 'test',
       },
     };
+    sinon.stub(AMQPClient.prototype, 'init').callsFake(async () => { });
     const publishStub = sinon.stub(AMQPClient.prototype, 'publish').callsFake(async () => { });
     const result = await process.call(getContext(), message, {});
 
