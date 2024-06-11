@@ -46,13 +46,16 @@ also use URL syntax to provide further parameters and any other options
 Will consume the incoming message object that contains `body` with the payload.
 If the exchange doesn't exist it will be created on start.
 
+#### Please note: The flow must be set as real-time! Otherwise, errors may appear.
+
+We recommend you set the lowest flow schedule (cron expression) frequency possible. E.g. once a day (0 0 * * *). And start the flow with the button ‘Run Now’ manually. Even though it does not affect the logic directly, each scheduled flow execution will create a record in the Executions list with no messages and no logs inside. All the logs and emitted messages will be appearing in the first execution.
+
 #### Configuration Fields
 * **Exchange** - (string, required): Exchange name where you want to get messages
 * **Binding Keys**  - (string, optional): Optionally you can use `#` or `*` to wildcard. For more information check the tutorial provided at the [RabbitMQ site](http://www.rabbitmq.com/tutorials/tutorial-five-javascript.html).
 * **Don't decrypt payload**  - (checkbox, optional): If checked payload will be not decrypted
 * **Reconnect Timeout** - (string, optional, 5 by default, maximum 1000): In case of errors how long to wait until retry is seconds
 * **Reconnect Attempts** - (string, optional, 12 by default, maximum 1000): How many times try to reconnect before throw error
-
 
 ## Actions
 
