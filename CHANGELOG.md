@@ -1,6 +1,6 @@
 ## 1.4.3 (June 14, 2024)
 * Now logs and messages for `Consume` trigger will be located in the last flow execution
-* Upgrade to sailor 2.7.3
+* Upgrade to sailor 2.7.2
 * Upgrade amqplib to 0.10.4
 
 ## 1.4.2 (March 27, 2023)
