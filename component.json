@@ -1,7 +1,7 @@
 {
   "title": "AMQP component",
   "description": "AMQP Component for async communication with queues and topics",
-  "version": "1.4.3-dev.3",
+  "version": "1.4.3-dev.4",
   "credentials": {
     "fields": {
       "amqpURI": {
@@ -60,7 +60,7 @@
   },
   "triggers": {
     "consume": {
-      "title": "Consume",
+      "title": "Consume (Real-time flows only)",
       "main": "./lib/triggers/consume.js",
       "type": "polling",
       "fields": {
