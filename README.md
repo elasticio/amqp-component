@@ -46,9 +46,10 @@ also use URL syntax to provide further parameters and any other options
 Will consume the incoming message object that contains `body` with the payload.
 If the exchange doesn't exist it will be created on start.
 
-#### Please note: The flow must be set as real-time! Otherwise, errors may appear.
-
+### Limitations:
+* SUPPORTS REALTIME FLOWS ONLY. Otherwise, errors may appear.
 We recommend you set the lowest flow schedule (cron expression) frequency possible. E.g. once a day (0 0 * * *). And start the flow with the button ‘Run Now’ manually. Even though it does not affect the logic directly, each scheduled flow execution will create a record in the Executions list and can make debugging difficult. All the logs and emitted messages will be appearing in the last execution.
+* Due to API limitations, once the user clicks `Run Now` after the SUSPENDED state, all stored messages in the queues will be processed, but not in the order they were received.
 
 #### Configuration Fields
 * **Exchange** - (string, required): Exchange name where you want to get messages
