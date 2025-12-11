@@ -8,5 +8,6 @@ module.exports = {
     'no-await-in-loop': 0,
     'max-len': ['error', { code: 180 }],
     'no-restricted-syntax': 0,
+    'default-param-last': 0,
   },
 };
