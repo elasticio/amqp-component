@@ -1,4 +1,4 @@
-## 1.4.4 (December 12, 2025)
+## 1.4.4 (January 15, 2026)
 * Updated Node.js engine requirement to `24.x`.
 * Upgraded dependencies:
   * `amqp-connection-manager`: 4.1.14 -> 5.0.0
