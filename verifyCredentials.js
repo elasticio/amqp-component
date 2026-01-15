@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-const { AMQPClient } = require('./lib/amqp.js');
+const { AMQPClient } = require('./lib/amqp');
 
 module.exports = async function verifyCredentials(cfg) {
   this.logger.info('Verifying Credentials...');

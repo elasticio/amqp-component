@@ -7,7 +7,7 @@
     "url": "https://elastic.io"
   },
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "scripts": {
     "audit": "better-npm-audit audit --level high --production",
@@ -26,22 +26,19 @@
   ],
   "dependencies": {
     "@elastic.io/component-logger": "0.0.1",
-    "amqp-connection-manager": "4.1.14",
-    "amqplib": "0.10.4",
-    "elasticio-node": "0.0.9",
-    "elasticio-sailor-nodejs": "2.7.2",
+    "amqp-connection-manager": "5.0.0",
+    "elasticio-sailor-nodejs": "2.7.7",
     "lodash": "4.17.21"
   },
   "devDependencies": {
-    "better-npm-audit": "3.7.3",
-    "chai": "4.2.0",
-    "dotenv": "16.0.3",
-    "eslint": "7.0.0",
-    "eslint-config-airbnb-base": "14.1.0",
-    "eslint-config-xo-space": "0.24.0",
-    "eslint-plugin-import": "2.20.2",
-    "mocha": "10.2.0",
-    "sinon": "15.0.2"
+    "better-npm-audit": "3.11.0",
+    "chai": "6.2.1",
+    "dotenv": "17.2.3",
+    "eslint": "8.57.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.32.0",
+    "mocha": "11.7.5",
+    "sinon": "21.0.0"
   },
   "repository": "elasticio/amqp-component",
   "license": "Apache-2.0"

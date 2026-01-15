@@ -1,3 +1,12 @@
+## 1.4.4 (January 15, 2026)
+* Updated Node.js engine requirement to `24.x`.
+* Upgraded dependencies:
+  * `amqp-connection-manager`: 4.1.14 -> 5.0.0
+  * `elasticio-sailor-nodejs`: 2.7.2 -> 2.7.7
+* Got rid of `elasticio-node` and `amqplib` dependencies
+* Updated CircleCI configuration to reflect Node 24 upgrade.
+* Enhanced README for clarity, improved language, and better formatting.
+
 ## 1.4.3 (June 17, 2024)
 * Now logs and messages for `Consume` trigger will be located in the last flow execution
 * Upgrade to sailor 2.7.2

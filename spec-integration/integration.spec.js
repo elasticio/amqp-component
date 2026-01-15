@@ -84,14 +84,14 @@ xdescribe('Integration test', () => {
       };
       logger.info('Initializing receiver');
       await consume.process.call(receiver, {}, cfg);
-      await new Promise((ok) => setTimeout(ok, 1000));
+      await new Promise((ok) => { setTimeout(ok, 1000); });
       logger.info('Sending messages');
       const out1 = await publish.process.call(sender, msg1, cfg);
       const out2 = await publish.process.call(sender, msg2, cfg);
       expect(out1).deep.equal(msg1);
       expect(out2).deep.equal(msg2);
       logger.info('Sending completed, now wait');
-      await new Promise((ok) => setTimeout(ok, 1000));
+      await new Promise((ok) => { setTimeout(ok, 1000); });
       logger.info('Lets check');
       expect(receiver.data.length).equal(1);
       expect(receiver.data[0]).deep.equal({
